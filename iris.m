@@ -5,6 +5,7 @@ class_name = ["Iris Setosa", "Iris Versicolour", "Iris Virginica"];
 data = csvread("./IrisData/iris_num.csv");
 features = data(:, 1:4);
 label = data(:, 5);
+
 % data visual
 figure(1)
 gplotmatrix(features, [], label)
