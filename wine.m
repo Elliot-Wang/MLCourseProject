@@ -1,25 +1,5 @@
-% һ�����ھ���Ʒ�ʵ����ݼ�
-% ���ݼ���Ϣ��
-% ��Щ�����Ƕ������ͬһ������ֲ�����Ѿƽ��л�ѧ�����Ľ������Щ���Ѿ�����������ͬ��Ʒ�֡��÷���ȷ�����������Ѿ���ÿ�����Ѿ��к��е�13�ֳɷֵ������� 
-% ����Ϊ��ʼ���ݼ��д�Լ30��������������ĳ��ԭ����ֻ��13ά�汾��
-% 
-% �����ǣ���Riccardo Leardi��riclea '@' anchem.unige.it������ 
-% 1���ƾ� 
-% 2��ƻ���� 
-% 3���� 
-% 4���ҷֵļ��
-% 5��þ 
-% 6���ܷ�
-% 7�� ��ͪ�� ������ 
-% 8���ǻ�������� 
-% 9��ԭ��ɫ�� 
-% 10����ɫǿ�� 
-% 11��ɫ�� 
-% 12��ϡ�����ѾƵ�OD280 / OD315 
-% 13�������� 
-% 
-% �ڷ��౳���£����Ǿ��С��������á���ṹ���������⡣�����״β����·��������������ݼ��������Ƿǳ�������ս�ԡ�
-
 wine_table = readtable('wine.csv');
 
-[trainedClassifier, validationAccuracy] = trainClassifier(wine_table);
+[trainedClassifier, validationAccuracy] = linearClassifier(wine_table)
+
+[trainedClassifier, validationAccuracy] = linearClassifierKFold(wine_table)
